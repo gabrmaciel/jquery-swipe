@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: Schibsted Grotesk;
+    box-sizing: border-box;
+    float: left;
+}
+
+html, body{
+    height: 100%;
+    background: #f5f5f5;
+}
+
+body{
+    margin: 0 20px
+}
+
+h1{
+    margin: 4rem 0
+}
+
+h1 i{
+    font-weight: 100;
+}
+
+article{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+article span:nth-child(1){
+    line-height: 1.4rem;
+    color: #5A62AB;
+    text-transform: uppercase;
+}
+
+article span:nth-child(2),
+article span:nth-child(3){
+    margin-top: 1rem;
+    line-height: 1.33rem;
+    color: #333;
+}
+
+article span b{
+    float: none;
+}
+
+#radar{
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#radar img{
+    
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 200%;
+    /* transform: rotate(-25deg);
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count:infinite */
+}
+
+@keyframes example {
+    0% {transform: rotate(-25deg);}
+    50% {transform: rotate(-65deg);}
+    100% {transform: rotate(-25deg);}
+  }
+
+
+
+#text{
+    width: 100%;
+    margin-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+#text .title-sub{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1F2845
+}
+
+#text .title-sub-mini{
+    width: 100%;
+    color: #1F2845
+}
+
+#text .bars{
+    width: 100%;
+    margin-top: 2rem
+}
+
+#text .bars-body{
+    width: 100%;
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+#text .bars-note{
+    width: 40px;
+    padding-left: 0.5rem
+}
+
+#text .bars-body-div{
+    width: calc(10% - 5px);
+    margin-right: 1px;
+    border: 1px solid #1F2845;
+    padding-bottom: calc(10% - 26px)
+}
+
+#text .bars-body-div-selected{
+    background: #1F2845;
+}
+
+#text .variables{
+    width: 100%;
+    margin-top: 2rem
+}
+
+#text .variable-line{
+    width: 100%;
+    font-size: 0.8rem;
+    margin-bottom: 0.33rem;
+}
+
+#text .variables-type{
+    margin-bottom: 1rem
+}
+
+#text .variables-title{
+    width: 100%;
+    margin-bottom: 1rem
+}
+
+#text .variable-line b{
+    width: 30px;
+}

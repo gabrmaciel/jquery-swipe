@@ -55,9 +55,9 @@ article span b{
 #radar img{
     
     position: absolute;
-    top: -100%;
-    left: -100%;
-    width: 200%;
+    top: 0%;
+    left: 0%;
+    width: 100%;
     /* transform: rotate(-25deg);
     animation-name: example;
     animation-duration: 4s;

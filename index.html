@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <title>Document</title>
 </head>
 <body style="max-width: 400px">
@@ -15,55 +16,200 @@
     <article>
         <span>A partir do cruzamento de <b>metodologia quanti e quali</b>, desenvolvemos uma ferramenta capaz de aterrissar o estudo de tendência, buscando <b>insights acionáveis</b> para cada mercado.</span>
         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eleifend orci ac lorem molestie pulvinar. Nullam eget facilisis elit, in porttitor diam. Cras vel nisl vel enim ultrices vestibulum nec vel risus. Sed a scelerisque augue.</span>
-        <span>Suspendisse odio turpis, rhoncus at orci eget, iaculis iaculis magna. Morbi non velit vel risus efficitur rutrum. Maecenas sit amet imperdiet nisl. Praesent luctus molestie nisl ut ultricies.</span>
+        <span>Suspendisse odio turpis, rhoncus at orci eget, iaculis iaculis magna. Morbi non velit vel risus efficitur rutrum. Maecenas sit amet imperdiet nisl.</span>
     </article>
     <div id="radar">
-        <img src="radar.png" alt="">
-    </div>
-    <div id="text">
-        <span class="title-sub">Visão Geral</span>
-        <span class="title-sub-mini">Desempenho de cada etapa com a tendência</span>
-        <div class="bars">
-            <span class="title-sub">IMAGINAÇÃO</span>
-            <div class="bars-body">
-                <div class="bars-body-div bars-body-div-selected">&nbsp;</div>
-                <div class="bars-body-div bars-body-div-selected">&nbsp;</div>
-                <div class="bars-body-div bars-body-div-selected">&nbsp;</div>
-                <div class="bars-body-div bars-body-div-selected">&nbsp;</div>
-                <div class="bars-body-div bars-body-div-selected">&nbsp;</div>
-                <div class="bars-body-div bars-body-div-selected">&nbsp;</div>
-                <div class="bars-body-div bars-body-div-selected">&nbsp;</div>
-                <div class="bars-body-div">&nbsp;</div>
-                <div class="bars-body-div">&nbsp;</div>
-                <div class="bars-body-div">&nbsp;</div>
-                <span class="title-sub bars-note">7/10</span>
+        <div class="radar-container">
+            <div class="radar-container-img" id="radar-container-img" style="background-image:url('radar_1.png')"></div>
+            <div class="radar-text" id="radar-text">
+                <span class="title-sub">COMO FUNCIONA?</span>
+                <span class="title-sub-text" id="radar-funciona-1" style="opacity: 0; top: 40px">1. O radar é calculado a partir da <b>força de cada etapa</b></span>
+                <span class="title-sub-text" id="radar-funciona-2" style="opacity: 0; top: 40px">2. Cada uma das <b>3 etapas</b> é medida a partir de um conjunto de <b>7 variáveis</b></span>
+                <span class="title-sub-text" id="radar-funciona-3" style="opacity: 0; top: 40px">3. As variáveis são calculadas a partir da análise <b>qualitativa + quantitativa</b>, trazendo um balizador mensurável para cada tendência</span>
+                <span class="radar-text-niveis" id="radar-text-niveis" style="opacity: 0; top: 40px">NIVEIS DE TENDÊNCIA</span>
+                <div class="radar-text-niveis-img" id="radar-text-niveis-img" style="opacity: 0; top: 40px">
+                    <div class="radar-text-niveis-img-img" id="radar-text-niveis-img-img" style="background-image:url('niveis.png')"></div>
+                </div>
+                
+            </div>
+            <div id="text">
+                <span class="title-sub">Visão Geral</span>
+                <span class="title-sub-mini">Desempenho de cada etapa com a tendência</span>
+                <div class="bars">
+                    <span class="bars-title-sub title-sub">IMAGINAÇÃO</span>
+                    <div class="bars-body">
+                        <div class="bars-body-div bars-body-div-selected">&nbsp;</div>
+                        <div class="bars-body-div bars-body-div-selected">&nbsp;</div>
+                        <div class="bars-body-div bars-body-div-selected">&nbsp;</div>
+                        <div class="bars-body-div bars-body-div-selected">&nbsp;</div>
+                        <div class="bars-body-div bars-body-div-selected">&nbsp;</div>
+                        <div class="bars-body-div bars-body-div-selected">&nbsp;</div>
+                        <div class="bars-body-div bars-body-div-selected">&nbsp;</div>
+                        <div class="bars-body-div">&nbsp;</div>
+                        <div class="bars-body-div">&nbsp;</div>
+                        <div class="bars-body-div">&nbsp;</div>
+                        <span class="title-sub bars-note">7/10</span>
+                    </div>
+                </div>
+                <div class="bars" style="margin-top: 1rem">
+                    <span class="bars-title-sub title-sub">IDENTIFICAÇÃO</span>
+                    <div class="bars-body">
+                        <div class="bars-body-div bars-body-div-selected">&nbsp;</div>
+                        <div class="bars-body-div bars-body-div-selected">&nbsp;</div>
+                        <div class="bars-body-div bars-body-div-selected">&nbsp;</div>
+                        <div class="bars-body-div bars-body-div-selected">&nbsp;</div>
+                        <div class="bars-body-div bars-body-div-selected">&nbsp;</div>
+                        <div class="bars-body-div bars-body-div-selected">&nbsp;</div>
+                        <div class="bars-body-div bars-body-div-selected">&nbsp;</div>
+                        <div class="bars-body-div bars-body-div-selected">&nbsp;</div>
+                        <div class="bars-body-div">&nbsp;</div>
+                        <div class="bars-body-div">&nbsp;</div>
+                        <span class="title-sub bars-note">8/10</span>
+                    </div>
+                </div>
+                <div class="bars" style="margin-top: 1rem">
+                    <span class="bars-title-sub title-sub">APROPRIAÇÃO</span>
+                    <div class="bars-body">
+                        <div class="bars-body-div bars-body-div-selected">&nbsp;</div>
+                        <div class="bars-body-div bars-body-div-selected">&nbsp;</div>
+                        <div class="bars-body-div bars-body-div-selected">&nbsp;</div>
+                        <div class="bars-body-div bars-body-div-selected">&nbsp;</div>
+                        <div class="bars-body-div bars-body-div-selected">&nbsp;</div>
+                        <div class="bars-body-div">&nbsp;</div>
+                        <div class="bars-body-div">&nbsp;</div>
+                        <div class="bars-body-div">&nbsp;</div>
+                        <div class="bars-body-div">&nbsp;</div>
+                        <div class="bars-body-div">&nbsp;</div>
+                        <span class="title-sub bars-note">5/10</span>
+                    </div>
+                </div>
+                <div class="variables">
+                    <span class="title-sub variables-title">VARIÁVEIS</span>
+                    <span class="title-sub variables-type">A. IMAGINAÇÃO</span>
+                    <div class="variable-line">
+                        <b>a.1</b> Indústria Cultural e entretenimento global
+                    </div>
+                    <div class="variable-line">
+                        <b>a.2</b> Eventos e acontecimentos
+                    </div>
+                    <div class="variable-line">
+                        <b>a.3</b> Mídia e Imprensa
+                    </div>
+                    <div class="variable-line">
+                        <b>a.4</b> Personalidades universais
+                    </div>
+                    <div class="variable-line">
+                        <b>a.5</b> Organizações e entidades
+                    </div>
+                    <div class="variable-line">
+                        <b>a.6</b> Grupos e movimentos
+                    </div>
+                    <div class="variable-line">
+                        <b>a.7</b> Marcas e plataformas globais
+                    </div>
+                    <span class="title-sub variables-type" style="margin-top: 1rem">B. IDENTIFICAÇÃO</span>
+                    <div class="variable-line">
+                        <b>a.1</b> Indústria Cultural e entretenimento global
+                    </div>
+                    <div class="variable-line">
+                        <b>a.2</b> Eventos e acontecimentos
+                    </div>
+                    <div class="variable-line">
+                        <b>a.3</b> Mídia e Imprensa
+                    </div>
+                    <div class="variable-line">
+                        <b>a.4</b> Personalidades universais
+                    </div>
+                    <div class="variable-line">
+                        <b>a.5</b> Organizações e entidades
+                    </div>
+                    <div class="variable-line">
+                        <b>a.6</b> Grupos e movimentos
+                    </div>
+                    <div class="variable-line">
+                        <b>a.7</b> Marcas e plataformas globais
+                    </div>
+                    <span class="title-sub variables-type" style="margin-top: 1rem">C. APROPRIAÇÃO</span>
+                    <div class="variable-line">
+                        <b>a.1</b> Indústria Cultural e entretenimento global
+                    </div>
+                    <div class="variable-line">
+                        <b>a.2</b> Eventos e acontecimentos
+                    </div>
+                    <div class="variable-line">
+                        <b>a.3</b> Mídia e Imprensa
+                    </div>
+                    <div class="variable-line">
+                        <b>a.4</b> Personalidades universais
+                    </div>
+                    <div class="variable-line">
+                        <b>a.5</b> Organizações e entidades
+                    </div>
+                    <div class="variable-line">
+                        <b>a.6</b> Grupos e movimentos
+                    </div>
+                    <div class="variable-line">
+                        <b>a.7</b> Marcas e plataformas globais
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="variables">
-            <span class="title-sub variables-title">VARIÁVEIS</span>
-            <span class="title-sub variables-type">A. IMAGINAÇÃO</span>
-            <div class="variable-line">
-                <b>a.1</b> Indústria Cultural e entretenimento global
-            </div>
-            <div class="variable-line">
-                <b>a.2</b> Eventos e acontecimentos
-            </div>
-            <div class="variable-line">
-                <b>a.3</b> Mídia e Imprensa
-            </div>
-            <div class="variable-line">
-                <b>a.4</b> Personalidades universais
-            </div>
-            <div class="variable-line">
-                <b>a.5</b> Organizações e entidades
-            </div>
-            <div class="variable-line">
-                <b>a.6</b> Grupos e movimentos
-            </div>
-            <div class="variable-line">
-                <b>a.7</b> Marcas e plataformas globais
-            </div>
-        </div>
+        <input type="hidden" id="radar-1-verifica" value="N">
+        <input type="hidden" id="radar-2-verifica" value="N">
+        <input type="hidden" id="radar-3-verifica" value="N">
+        <input type="hidden" id="radar-4-verifica" value="N">
+        <input type="hidden" id="radar-5-verifica" value="N">
     </div>
+    <div id="margin"></div>
+    <script>
+        $(document).ready(function(){
+            var elemento = $('#radar').offset().top;
+            elemento = parseInt(elemento);
+
+            var altura_imagem = 400;
+            
+            $(document).on('scroll', function(){
+
+                    if($(window).scrollTop() > elemento + 400 && $("#radar-1-verifica").val() == "N"){
+                        $("#radar-container-img").css("background-image", "url(radar_2.png)");
+                        $("#radar-1-verifica").val("S");
+                        $("#radar-funciona-1").css({"opacity":"1", "top":"0"})
+                    }
+                    
+                    if($(window).scrollTop() > elemento + 800 && $("#radar-2-verifica").val() == "N"){
+                        $("#radar-container-img").css("background-image", "url(radar_3.png)");
+                        $("#radar-2-verifica").val("S");
+                        $("#radar-funciona-2").css({"opacity":"1", "top":"0"})
+                    }
+
+                    if($(window).scrollTop() > elemento + 1200 && $("#radar-3-verifica").val() == "N"){
+                        $("#radar-container-img").css("background-image", "url(radar_4.png)");
+                        $("#radar-3-verifica").val("S");
+                        $("#radar-funciona-3").css({"opacity":"1", "top":"0"});
+                        $("#radar-text-niveis").css({"opacity":"1", "top":"0"});
+                        $("#radar-text-niveis-img").css({"opacity":"1", "top":"0"});
+                    }
+
+                    if($(window).scrollTop() > elemento + 1600 && $("#radar-4-verifica").val() == "N"){
+                        $("#radar-container-img").css("background-image", "url(radar_5.png)");
+                        $("#radar-4-verifica").val("S");
+                        $("#radar-text-niveis-img-img").css("background-image", "url(niveis-2.png)");
+                    }
+
+                    if($(window).scrollTop() > elemento + 2000 && $("#radar-5-verifica").val() == "N"){
+                        $("#radar-container-img").css("background-image", "url(radar_6.png)");
+                        $("#radar-5-verifica").val("S");
+                        $("#radar-text").css({"opacity":"0", "height":"0"})
+                        $(".radar-container").css({"position":"relative","top":"calc(100% - "+altura_imagem+"px)"})
+                        $("#radar").css("height", altura_imagem+"px")
+                        $('html, body').animate({scrollTop:$('#radar').position().top}, 0);
+
+
+                    }
+                
+            });
+            
+        })
+    </script>
 </body>
 </html>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="570.356" height="598.455" viewBox="0 0 570.356 598.455">
+  <g id="Group_1741" data-name="Group 1741" transform="translate(-1513.117 -3141.5)">
+    <path id="Path_1582" data-name="Path 1582" d="M7392.109,395.355,7153.646,533.03c-76.037-131.7-30.916-300.1,100.788-376.138C7298.286,131.571,7341.467,120,7392.109,120Z" transform="translate(-5603.592 3021.5)" fill="#d0cfe8"/>
+    <path id="Path_1583" data-name="Path 1583" d="M7369.731,210.55,7608.2,348.229c-76.039,131.7-244.439,176.821-376.14,100.784-43.856-25.318-75.464-56.93-100.785-100.784Z" transform="translate(-5571.419 3221.585)" fill="#d0cfe8"/>
+    <path id="Path_1584" data-name="Path 1584" d="M7208.619,395.355V120c152.074,0,275.355,123.28,275.355,275.355,0,50.639-11.569,93.822-36.893,137.676Z" transform="translate(-5400.501 3021.5)" fill="#d0cfe8"/>
+    <g id="Group_1400" data-name="Group 1400" transform="translate(1533.319 3209.644)">
+      <path id="Path_1585" data-name="Path 1585" d="M7392.421,204.668a70,70,0,1,1-70-70,70,70,0,0,1,70,70" transform="translate(-7261.891 -144.357)" fill="#4d4a99" stroke="#f6f6f6" stroke-width="2"/>
+      <text id="A" transform="translate(41.529 82.811)" fill="#fff" font-size="60" font-family="IBMPlexSans-Light, IBM Plex Sans" font-weight="300"><tspan x="0" y="0">A</tspan></text>
+    </g>
+    <g id="Group_1401" data-name="Group 1401" transform="translate(1939.738 3209.854)">
+      <path id="Path_1598" data-name="Path 1598" d="M7392.422,204.668a70,70,0,1,1-70-70,70,70,0,0,1,70,70" transform="translate(-7262.311 -144.568)" fill="#4d4a99" stroke="#f6f6f6" stroke-width="2"/>
+      <text id="B" transform="translate(41.112 82.6)" fill="#fff" font-size="60" font-family="IBMPlexSans-Light, IBM Plex Sans" font-weight="300"><tspan x="0" y="0">B</tspan></text>
+    </g>
+    <g id="Group_1402" data-name="Group 1402" transform="translate(1713.189 3585.333)">
+      <path id="Path_1599" data-name="Path 1599" d="M7392.422,204.668a70,70,0,1,1-70-70,70,70,0,0,1,70,70" transform="translate(-7238.125 -121.047)" fill="#4d4a99" stroke="#f6f6f6" stroke-width="2"/>
+      <text id="C" transform="translate(65.798 106.121)" fill="#fff" font-size="60" font-family="IBMPlexSans-Light, IBM Plex Sans" font-weight="300"><tspan x="0" y="0">C</tspan></text>
+    </g>
+  </g>
+</svg>

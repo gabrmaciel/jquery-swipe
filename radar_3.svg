@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="578" height="651.001" viewBox="0 0 578 651.001">
+  <g id="Group_1755" data-name="Group 1755" transform="translate(-671.001 -3029.964)">
+    <path id="Path_1592" data-name="Path 1592" d="M7995.233,551.2l-.133-1.8-274.25,20.715-1.1-.642L7975.21,466.484l-.658-1.674L7717.786,568.33l-.289-.171,212.309-176.216-1.125-1.393L7715.854,567.2l-.023-.013,150.762-231.879-1.49-.993L7715.249,564.8V562.4L7788.1,291.436l-1.719-.474-71.137,264.58V284.235h-10.686V555.677l-70.482-262.148-1.719.471,72.2,268.54v3.818l-149.2-229.477-1.488.99,150.584,231.6-.111.065L7491.788,393.117l-1.125,1.393L7702.7,570.5l-.406.239L7445.913,467.374l-.658,1.677,255.074,102.836-1.289.755-273.674-20.67-.133,1.8,271.066,20.47-5.449,3.186-258.145,59.223.4,1.757,252.525-57.933L7460.458,712l5.346,9.361,229.889-134.283-183.744,192.7,1.279,1.254,188.047-197.221,5.229-3.054L7589.077,825.978l1.6.787,118.568-247.606.813-.474-40.68,273.725,1.758.265,40.9-275.141.068-.042.072.042,43.736,276.7,1.754-.281-43.508-275.26.873.509,123.217,249.55,1.6-.8L7717.831,580.835l4.635,2.709L7906.37,779l1.287-1.245-179.73-191.023,226.084,132.061,5.348-9.361L7728.843,574.789l257.375,68.24.453-1.745-262.529-69.61Z" transform="translate(-6750.232 2745.729)" fill="#4a53a4"/>
+    <g id="Group_1400" data-name="Group 1400" transform="translate(681.47 3076.447)">
+      <path id="Path_1585" data-name="Path 1585" d="M7322.421,169.668a35,35,0,1,1-35-35,35,35,0,0,1,35,35" transform="translate(-7261.891 -144.357)" fill="#4d4a99" stroke="#f6f6f6" stroke-width="2"/>
+      <text id="A" transform="translate(16.03 35.561)" fill="#fff" font-size="29" font-family="IBMPlexSans-Light, IBM Plex Sans" font-weight="300"><tspan x="0" y="0">A</tspan></text>
+    </g>
+    <g id="Group_1401" data-name="Group 1401" transform="translate(1187.89 3076.658)">
+      <path id="Path_1598" data-name="Path 1598" d="M7322.422,169.668a35,35,0,1,1-35-35,35,35,0,0,1,35,35" transform="translate(-7262.311 -144.568)" fill="#4d4a99" stroke="#f6f6f6" stroke-width="2"/>
+      <text id="B" transform="translate(15.612 36.35)" fill="#fff" font-size="30" font-family="IBMPlexSans-Light, IBM Plex Sans" font-weight="300"><tspan x="0" y="0">B</tspan></text>
+    </g>
+    <g id="Group_1402" data-name="Group 1402" transform="translate(910.703 3596.344)">
+      <path id="Path_1599" data-name="Path 1599" d="M7322.422,169.668a35,35,0,1,1-35-35,35,35,0,0,1,35,35" transform="translate(-7238.125 -121.047)" fill="#4d4a99" stroke="#f6f6f6" stroke-width="2"/>
+      <text id="C" transform="translate(40.048 58.871)" fill="#fff" font-size="29" font-family="IBMPlexSans-Light, IBM Plex Sans" font-weight="300"><tspan x="0" y="0">C</tspan></text>
+    </g>
+  </g>
+</svg>

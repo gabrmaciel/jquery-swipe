@@ -179,8 +179,8 @@
 
             //2 Etapa - logo, pego a largura da imagem, que equivale à altura pela proporção ser 1:1 e defino uma nova altura que vai ser usada para cada seção
             var altura_imagem = $('#radar').width();
+            $("#radar-container-img").css("width", altura_imagem+"px");
             $("#radar-container-img").css("height", altura_imagem+"px");
-            $("#radar-text-niveis-img-img").css("width", altura_imagem+"px");
             $("#radar-text-niveis-img-img").css("height", altura_imagem+"px");
             $("#radar").css("height", altura_imagem*7+"px");
 

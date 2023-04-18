@@ -173,14 +173,22 @@
     <div id="margin"></div>
     <script>
         $(document).ready(function(){
+            //1 Etapa - esta variável elemento é útil para pegar o pixel em que a div #radar começa
             var elemento = $('#radar').offset().top;
             elemento = parseInt(elemento);
 
+            //2 Etapa - logo, pego a largura da imagem, que equivale à altura pela proporção ser 1:1 e defino uma nova altura que vai ser usada para cada seção
             var altura_imagem = $('#radar').width();
             $("#radar-container-img").css("height", altura_imagem+"px");
             $("#radar").css("height", altura_imagem*7+"px");
-            
+
             $(document).on('scroll', function(){
+
+                    //3 Etapa - aqui eu faço o seguinte, quando a tela vai abaixando, ela vai registrando que já passou os elementos
+                    //3.1 Etapa - então o que ocorre é que a cada X quantidade de pixels, definido lá na etapa dois ele faz dois tipos de processos
+                    //3.2 Etapa - o primeiro processo é o visual, de exibir os títulos e as imagens, com transição
+                    //3.3 Etapa - o outro diz respeito a validar se o evento já ocorreu ou não, por isso salvo esta informação em inputs hiddens
+                    //3.4 Etapa - e mudo os valores de N para S quando passa a quantidade de pixels na rolagem
 
                     if($(window).scrollTop() > elemento + 400 && $("#radar-1-verifica").val() == "N"){
                         $("#radar-container-img").css("background-image", "url(radar_2.png)");

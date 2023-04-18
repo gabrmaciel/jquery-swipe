@@ -185,13 +185,13 @@
                     if($(window).scrollTop() > elemento + 400 && $("#radar-1-verifica").val() == "N"){
                         $("#radar-container-img").css("background-image", "url(radar_2.png)");
                         $("#radar-1-verifica").val("S");
-                        $("#radar-funciona-1").css({"opacity":"1", "top":"0"})
+                        $("#radar-funciona-1").css({"opacity":"1", "top":"0"});
                     }
                     
                     if($(window).scrollTop() > elemento + 800 && $("#radar-2-verifica").val() == "N"){
                         $("#radar-container-img").css("background-image", "url(radar_3.png)");
                         $("#radar-2-verifica").val("S");
-                        $("#radar-funciona-2").css({"opacity":"1", "top":"0"})
+                        $("#radar-funciona-2").css({"opacity":"1", "top":"0"});
                     }
 
                     if($(window).scrollTop() > elemento + 1200 && $("#radar-3-verifica").val() == "N"){
@@ -211,9 +211,10 @@
                     if($(window).scrollTop() > elemento + 2000 && $("#radar-5-verifica").val() == "N"){
                         $("#radar-container-img").css("background-image", "url(radar_6.png)");
                         $("#radar-5-verifica").val("S");
-                        $("#radar-text").css({"opacity":"0", "height":"0"})
-                        $(".radar-container").css({"position":"relative","top":"calc(100% - "+altura_imagem+"px)"})
-                        $("#radar").css("height", altura_imagem+"px")
+                        $("#radar-text").css({"opacity":"0", "height":"0"});
+                        $(".radar-container").css({"position":"relative","top":"calc(100% - "+altura_imagem+"px)"});
+                        $("#radar").css("height", altura_imagem+"px");
+                        $("#text").css("opacity", "1")
                         //$('html, body').animate({scrollTop:$('#radar').position().top}, 0);
                         document.getElementById("radar").scrollIntoView();
                     }

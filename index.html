@@ -176,7 +176,9 @@
             var elemento = $('#radar').offset().top;
             elemento = parseInt(elemento);
 
-            var altura_imagem = 400;
+            var altura_imagem = $('#radar').width();
+            $("#radar-container-img").css("height", altura_imagem+"px");
+            $("#radar").css("height", altura_imagem*7+"px");
             
             $(document).on('scroll', function(){
 

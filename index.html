@@ -215,7 +215,8 @@
                         $(".radar-container").css({"position":"relative","top":"calc(100% - "+altura_imagem+"px)"})
                         $("#radar").css("height", altura_imagem+"px")
                         //$('html, body').animate({scrollTop:$('#radar').position().top}, 0);
-                        document.getElementById("radar").scrollIntoView();
+                        setTimeout($('html, body').animate({scrollTop:$('#radar').position().top - altura_imagem/2}, 'smooth'), 3000);
+                        //setTimeout(document.getElementById("radar").scrollIntoView(), 1000);
                     }
                 
             });

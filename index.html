@@ -13,23 +13,22 @@
 </head>
 <body>
     <div id="App">
-
-    
-        <h1><b>RADAR DE</b> <i>TROPICALIZAÇÃO</i></h1>
-        <article>
+        <div class="app-content">
+        <h1 id="title"><b>RADAR DE</b> <i>TROPICALIZAÇÃO</i></h1>
+        <article id="article">
             <span>A partir do cruzamento de <b>metodologia quanti e quali</b>, desenvolvemos uma ferramenta capaz de aterrissar o estudo de tendência, buscando <b>insights acionáveis</b> para cada mercado.</span>
             <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eleifend orci ac lorem molestie pulvinar. Nullam eget facilisis elit, in porttitor diam. Cras vel nisl vel enim ultrices vestibulum nec vel risus. Sed a scelerisque augue.</span>
             <span>Suspendisse odio turpis, rhoncus at orci eget, iaculis iaculis magna. Morbi non velit vel risus efficitur rutrum. Maecenas sit amet imperdiet nisl.</span>
         </article>
-        <div id="images" style="opacity: 0; height: 0">
-            <img src="radar_1.png" alt="" srcset="">
-            <img src="radar_2.svg" alt="" srcset="">
-            <img src="radar_3.svg" alt="" srcset="">
-            <img src="radar_4.png" alt="" srcset="">
-            <img src="radar_5.png" alt="" srcset="">
-            <img src="radar_6.png" alt="" srcset="">
-            <img src="niveis.png" alt="" srcset="">
-            <img src="niveis-2.png" alt="" srcset="">
+        <div id="images" style="opacity: 0; width: 0; height: 0; max-width: 0; max-height: 0">
+            <img src="radar_1.png" alt="" srcset="" style="width: 0; height: 0; max-width: 0; max-height: 0">
+            <img src="radar_2.svg" alt="" srcset="" style="width: 0; height: 0; max-width: 0; max-height: 0">
+            <img src="radar_3.svg" alt="" srcset="" style="width: 0; height: 0; max-width: 0; max-height: 0">
+            <img src="radar_4.png" alt="" srcset="" style="width: 0; height: 0; max-width: 0; max-height: 0">
+            <img src="radar_5.png" alt="" srcset="" style="width: 0; height: 0; max-width: 0; max-height: 0">
+            <img src="radar_6.png" alt="" srcset="" style="width: 0; height: 0; max-width: 0; max-height: 0">
+            <img src="niveis.png" alt="" srcset="" style="width: 0; height: 0; max-width: 0; max-height: 0">
+            <img src="niveis-2.png" alt="" srcset="" style="width: 0; height: 0; max-width: 0; max-height: 0">
         </div>
         <div id="radar">
             <div class="radar-container">
@@ -174,6 +173,7 @@
             <input type="hidden" id="radar-5-verifica" value="N">
         </div>
         <div id="margin"></div>
+        </div>
     </div>
     <script>
         $(document).ready(function(){
@@ -195,8 +195,6 @@
                     //3.2 Etapa - o primeiro processo é o visual, de exibir os títulos e as imagens, com transição
                     //3.3 Etapa - o outro diz respeito a validar se o evento já ocorreu ou não, por isso salvo esta informação em inputs hiddens
                     //3.4 Etapa - e mudo os valores de N para S quando passa a quantidade de pixels na rolagem
-
-                    console.log($("#App").scrollTop())
 
                     if($("#App").scrollTop() > elemento + 400 && $("#radar-1-verifica").val() == "N"){
                         $("#radar-container-img").css("background-image", "url(radar_2.svg)");
@@ -228,11 +226,7 @@
                         $("#radar-container-img").css("background-image", "url(radar_6.png)");
                         $("#radar-5-verifica").val("S");
                         $("#radar-text").css({"opacity":"0", "height":"0"});
-                        $(".radar-container").css({"position":"relative","top":"calc(100% - "+altura_imagem+"px)"});
-                        $("#radar").css("height", altura_imagem+"px");
-                        $("#text").css("opacity", "1")
-                        //$('html, body').animate({scrollTop:$('#radar').position().top}, 0);
-                        document.getElementById("radar").scrollIntoView();
+                        $("#text").css("opacity", "1");
                     }
                 
             });

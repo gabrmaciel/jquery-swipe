@@ -8,8 +8,6 @@
 
 html, body{
     background: #f5f5f5;
-    width: 100%;
-    max-width: 100%;
 }
 
 html{
@@ -52,6 +50,13 @@ article span:nth-child(3){
 
 article span b{
     float: none;
+}
+
+#App{
+    max-width: 400px;
+    max-height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 
 #radar{

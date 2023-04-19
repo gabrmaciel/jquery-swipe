@@ -183,8 +183,6 @@
 
             //2 Etapa - logo, pego a largura da imagem, que equivale à altura pela proporção ser 1:1 e defino uma nova altura que vai ser usada para cada seção
             var altura_imagem = $('#radar').width();
-            // $("#radar-container-img").css("width", altura_imagem+"px");
-            // $("#radar-container-img").css("height", altura_imagem+"px");
             $("#radar-text-niveis-img-img").css("height", altura_imagem+"px");
             $("#radar").css("height", altura_imagem*7+"px");
 
@@ -227,6 +225,9 @@
                         $("#radar-5-verifica").val("S");
                         $("#radar-text").css({"opacity":"0", "height":"0"});
                         $("#text").css("opacity", "1");
+                        $("#radar").css("height", "auto");
+                        $("#App").animate({ scrollTop: $("#title").outerHeight() + $("#article").outerHeight()+ "px"}, 0);
+                        console.log($("#title").height()+" -- "+ $("#article").height()+ "px")
                     }
                 
             });
